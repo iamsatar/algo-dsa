@@ -1,6 +1,27 @@
-zigzagTraverse
+# zigzag Traversal
 
 - a zigzag traversal of a grid in JavaScript, mimicking the navigation of library bookshelves. Start at the bottom-right corner, move upwards in the last column, then downwards in the previous column, alternating directions. Traverse each column in this zigzag pattern and collect the items. Good luck!
+
+
+#### Example
+
+Given the grid:
+
+```js
+    const grid = [
+    [101, 102, 103, 104],
+    [201, 202, 203, 204]
+];
+```
+
+#### The correct zigzag traversal should return:
+
+```js
+   [204, 104, 103, 203, 202, 102, 101, 201]
+```
+
+
+#### Solution
 
 ```js
 
