@@ -1,4 +1,4 @@
-// zigzagTraverse
+zigzagTraverse
 
 - a zigzag traversal of a grid in JavaScript, mimicking the navigation of library bookshelves. Start at the bottom-right corner, move upwards in the last column, then downwards in the previous column, alternating directions. Traverse each column in this zigzag pattern and collect the items. Good luck!
 
