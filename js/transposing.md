@@ -39,3 +39,44 @@ for (let row of transposedSeating) {
 }
 // Output isn't as expected. Can you identify the fix?
 ```
+
+
+### Reversing the transpose
+
+```js
+function transformMatrix(matrix) {
+    let rows = matrix.length;
+    let cols = rows > 0 ? matrix[0].length : 0;
+    let result = [];
+
+    // TODO: Modify the loop to transpose the matrix in reverse order
+    
+    for(let i = 0;i<cols; ++i ){
+        result[i] = []
+         for(let j = 0;j<rows; ++j ){
+        
+        result[i][j] =matrix[j][cols-i-1]
+    }
+    }
+
+    return result;
+}
+
+// let matrix = [
+//     [101, 102, 103, 104],
+//     [201, 202, 203, 204],
+//     [301, 302, 303, 304]
+// ];
+let matrix = [
+      [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+// TODO: Store the result of transformMatrix in transposedMatrix and print it
+
+const transformedMatrix = transformMatrix(matrix)
+
+
+console.log(transformedMatrix)
+```
