@@ -42,6 +42,33 @@ for (let row of transposedSeating) {
 
 
 ### Reversing the transpose
+- let's add a twist! Write the transformMatrix function to transpose the given matrix in reverse order, starting from the last column and moving to the first column. This slight modification will provide a fresh perspective on transposing matrices. Go ahead and give it a try!
+
+Don't forget to call the function and to print the results!
+
+For example, if the given matrix is:
+```js
+
+[
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+```
+
+
+after transposing
+
+```js
+
+[
+    [3, 6, 9],
+    [2, 5, 8],
+    [1, 4, 7]
+]
+
+```
 
 ```js
 function transformMatrix(matrix) {
@@ -67,6 +94,17 @@ function transformMatrix(matrix) {
 //     [201, 202, 203, 204],
 //     [301, 302, 303, 304]
 // ];
+
+// this would be 
+/*
+[
+  [ 104, 204, 304 ],
+  [ 103, 203, 303 ],
+  [ 102, 202, 302 ],
+  [ 101, 201, 301 ]
+]
+
+*/
 let matrix = [
       [1, 2, 3],
     [4, 5, 6],
